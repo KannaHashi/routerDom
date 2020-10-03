@@ -4,6 +4,7 @@ import Navbar from "./Page/Navbar";
 import About from "./Page/About";
 import Contact from "./Page/Contact";
 import Home from "./Page/Home";
+import DetailUser from "./Page/detailUser";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
         <Navbar />
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/detail" exact component={DetailUser} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
         </Switch>
